@@ -17,5 +17,4 @@ COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
 #EXPOSE 8000
 # 실행
 #CMD ["java", "-Dspring.profiles.active=${profile:default}", "-jar", "app.jar"]
-
-
+CMD ["catalina.sh", "run"]
